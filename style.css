@@ -1,0 +1,107 @@
+/* Réinitialisation basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corps de la page */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #3b82f6, #6366f1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container principal de la carte */
+  .card-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* En-tête de la carte : photo + nom */
+  .card-header {
+    margin-bottom: 20px;
+  }
+  
+  /* Photo de profil */
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+  }
+  
+  /* Nom et sous-titre */
+  .card-header h2 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .card-header p span {
+    margin-top: 5px;
+font-weight: bold;
+  }
+  .card-header h2 span {
+    font-size: 1rem;
+    color: #777;
+    display: block;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  /* Corps de la carte : boutons / liens */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn {
+    display: block;
+    text-decoration: none;
+    background-color: #e2e8f0; /* Gris clair */
+    color: #333;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #cbd5e1; /* Gris un peu plus foncé */
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .card-header h2 {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      font-size: 0.95rem;
+    }
+  }
+  
