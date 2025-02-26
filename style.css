@@ -104,4 +104,13 @@ font-weight: bold;
       font-size: 0.95rem;
     }
   }
+
+  .btn:last-child {
+    background-color: #4caf50; /* Vert */
+    color: #fff;
+  }
+  
+  .btn:last-child:hover {
+    background-color: #388e3c;
+  }
   
